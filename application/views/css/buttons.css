@@ -1,0 +1,9 @@
+.button-dark {
+    border-radius: 50px;
+    float: none;
+    width: 32%;
+    text-align: center;
+    color: white;
+    background-image: url(../images/dark-wood-small.jpg);
+    font-family: "Helvetica";
+}

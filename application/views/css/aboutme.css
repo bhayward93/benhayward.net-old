@@ -1,0 +1,23 @@
+.outeraboutme {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color:whitesmoke;
+}
+
+.aboutme {
+    width: 100%;
+}
+
+.aboutme .title {
+    text-align: center;
+}
+
+.aboutmeheader {
+    width: 100%;
+}
+
+.page {
+    width: 80%;
+    margin: auto;
+}

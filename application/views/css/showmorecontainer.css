@@ -1,0 +1,21 @@
+.showMoreContainer {
+    float: none;
+    text-align: center;
+    height: 5%;
+    max-height: 5%;
+    min-height: 5%;
+    width: 100%;
+    border-top-style: inset;
+    border-top-width: 1px;
+}
+
+.showmorecontainer .button {
+    font-family: "Helvetica";
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    background: none;
+    text-align: center;
+    background-image: url(/images/dark-wood-small.jpg);
+    color: White;
+}
