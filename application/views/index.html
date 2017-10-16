@@ -4,7 +4,6 @@
     <link rel="stylesheet" type="text/css" href="css/aboutme.css">
     <link rel="stylesheet" type="text/css" href="css/buttons.css">
     <script type="text/javascript" src="scripts/showmoreless.js"></script>
-
     <style>
         #button728184052567 {
             border: 1px dotted gray;
@@ -14,7 +13,6 @@
             left: 9.203125px;
             top: 89.421875px;
         }
-
     </style>
     <style>
         #div728184044144 {
@@ -25,7 +23,6 @@
             left: 23.203125px;
             top: 619px;
         }
-
     </style>
     <style>
         a {
@@ -41,9 +38,7 @@
 
     </style>
 </head>
-
 <body>
-
     <div class="intro" id="top">
         <div class="inner">
             <div class="center_image">
@@ -101,7 +96,7 @@
 
             </div>
             <div class="showmorecontainer">
-                <button class="button-dark" id="showmore" onClick="toggleShowMore()">
+                <button class="fullw-green-button" id="showmore" onClick="toggleShowMore()">
                 More...
             </button>
             </div>
@@ -114,48 +109,103 @@
         <div class="portfolioinner">
         </div>
     </div>
-    <div class="inner" id="contactme">
-        <div class="row">
+	<div class="outeraboutme" id="outercontactform">
+		<aside class="leftbanner"></aside>
+		<div class="page" id="contactcontainer">
+			<hr>
 
-            <div class="columns">
-                <p class="thumbnail_align">
-                    <a href="http://www.github.com/bhayward93">
-                        <img src="images/github-round.png" alt="GitHub" class="thumbnail">
-                    </a>
-                </p>
-                <h4>GitHub</h4>
-            </div>
-            <div class="columns">
-                <p class="thumbnail_align">
-                    <a href="https://www.linkedin.com/in/ben-hayward/">
-                        <img src="images/linkedin-icon.png" alt="LinkedIn" class="thumbnail">
-                    </a>
-                </p>
-                <h4>LinkedIn</h4>
-            </div>
-            <div class="columns">
-                <p class="thumbnail_align">
-                    <a href="http://www.twitter.com/nemoben">
-                        <img src="images/twitter_circle_color-512.png" alt="Twitter" class="thumbnail">
-                    </a>
-                </p>
-                <h4>Twitter</h4>
-            </div>
-            <div class="columns">
-                <p class="thumbnail_align">
-                    <a href="mailto:benhayward.ben@gmail.com">
-                        <img src="images/email.svg" alt="Email" class="thumbnail">
-                    </a>
-                </p>
-                <h4>Email</h4>
-            </div>
-        </div>
-    </div>
+			<div class="inner" id="contactme">
+				<form class = contactform name="contactform" method="post" action="../helpers/send_email.php">
+					<table width="450px" class="contacttable">
+						<tr>
+							<td valign="center">
+								<label for="first_name">First Name *</label>
+							</td>
+							<td valign="center">
+								<input  class="inputBox" type="text" name="first_name" maxlength="50" size="30">
+							</td>
+						</tr>
+						<tr>
+							<td valign="center">
+								<label for="last_name">Last Name *</label>
+							</td>
+							<td valign="center">
+								<input  class="inputBox" type="text" name="last_name" maxlength="50" size="30">
+							</td>
+						</tr>
+						<tr>
+							<td valign="center">
+								<label for="email">Email Address *</label>
+							</td>
+							<td valign="center">
+								<input class="inputBox"  type="text" name="email" maxlength="80" size="30">
+							</td>
+						</tr>
+						<tr>
+							<td valign="center">
+								<label for="telephone">Telephone</label>
+							</td>
+							<td valign="center">
+								<input class="inputBox"  type="text" name="telephone" maxlength="30" size="30">
+							</td>
+						</tr>
+						<tr>
+							<td valign="top">
+								<label for="comments">Comments *</label>
+							</td>
+							<td valign="center">
+								<textarea class="inputBox"  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center">
+								<input class="small-green-button" type="submit" value="Submit">
+							</td>
+						</tr>
+					</table>
+				</form>
+				<hr>
+				<div class="row">
+					<div class="columns">
+						<p class="thumbnail_align">
+							<a href="http://www.github.com/bhayward93">
+								<img src="images/github-round.png" alt="GitHub" class="thumbnail">
+								<h4>GitHub</h4>
+							</a>
+						</p>
 
-    <div class="row blockDisplay"> </div>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align">
+							<a href="https://www.linkedin.com/in/ben-hayward/">
+								<img src="images/linkedin-icon.png" alt="LinkedIn" class="thumbnail">
+								<h4>LinkedIn</h4>
+							</a>
+						</p>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align">
+							<a href="http://www.twitter.com/nemoben">
+								<img src="images/twitter_circle_color-512.png" alt="Twitter" class="thumbnail">
+								<h4>Twitter</h4>
+							</a>
+						</p>
+					</div>
+					<div class="columns">
+						<p class="thumbnail_align">
+							<a href="mailto:benhayward.ben@gmail.com">
+								<img src="images/email.svg" alt="Email" class="thumbnail">
+								<h4>Email</h4>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<aside class="rightbanner"></aside>
+	</div>
     <footer class="secondary_header footer">
         <div class="copyright"><a href="#top">Back To Top</a></div>
         <div class="copyright">&copy;2017 - <strong>Ben Hayward</strong> </div>
     </footer>
-
 </body>
