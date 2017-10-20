@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH');// OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
@@ -20,6 +20,30 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		// If you have post data...
+///*		if (!empty($_POST)) {
+//			$title = $this->input->post('title');
+//			$author = $this->input->post('author');
+//			$image = $this->input->post('image');
+//			$content = $this->input->post('content');
+//			// Checking if everything is there
+//			if ($title && $author && $image && $content) {
+//				// Loading model
+//				$this->load->model('BlogController');
+//				$data = array(
+//					'title' => $title,
+//					'author' => $author,
+//					'image' => $image,
+//					'content' => $content //update nammes
+//				);
+//
+//				// Calling model
+//				$id = $this->BlogController->insert($data);
+//
+//				// You can do something else here
+//			}
+//		}*/
+		// Loading view
+		$this->load->view('../views/index.html');
 	}
 }
