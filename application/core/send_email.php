@@ -7,28 +7,26 @@
  */
 
 //Based upon code @ http://www.freecontactform.com/email_form.php
-include 'DebugHelper.php';
+include '../helpers/DebugHelper.php';
 
-$dbhelp = new DebugHelper();
-showAllErrors(); //Sets errors to be shown
-debug_to_console("init");
-echoTest();
-if(isset($_POST['email'])) { //if email posted
+DebugHelper::showAllErrors(); 		   //Sets errors to be shown
+DebugHelper::debug_to_console("init"); //test console
+DebugHelper::echoTest(); 			   //test echo output
+if(isset($_POST['email'])) { 	   //if email posted
 	$email_to = "benhayward93@hotmail.com";
 	$email_subject = "BenHayward.net";
 	print_r(error_get_last()); //Temporary
 
-	debug_to_console("last error: ".error_get_last());
+	DebugHelper::debug_to_console("last error: ".error_get_last());
 	function died($error) {
 		// your error code can go here
 		echo "Errors appear below.<br /><br />"; //change this to reload page and display errors in html.
 		echo $error."<br /><br />";
-		debug_to_console("Error! : ".$error);
-
+		DebugHelper::debug_to_console("Error! : ".$error);
 		die();
 	}
 
-	// validation expected data exists
+	// valida	tion expected data exists
 	if(!isset($_POST['first_name']) ||
 		!isset($_POST['last_name']) ||
 		!isset($_POST['email']) 	||
@@ -89,7 +87,6 @@ if(isset($_POST['email'])) { //if email posted
 		'X-Mailer: PHP/' . phpversion();
 	@mail($email_to, $email_subject, $email_message, $headers);
 	//Success HTML.
-	debug_to_console("Email Sent, script finished");
-	debug_to_console("Last error: ".error_get_last());
-
+	DebugHelper::debug_to_console("Email Sent, script finished");
+	DebugHelper::debug_to_console("Last error: ".error_get_last());
 }
