@@ -10,7 +10,7 @@
 /*
  * Various debugging utilities.
  */
-class DebugHelper implements InlineTestInterface
+class DebugHelper implements OutputTestInterface
 {
 	//https://stackoverflow.com/questions/4323411/how-can-i-write-to-console-in-php
 	/*

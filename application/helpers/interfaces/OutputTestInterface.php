@@ -10,7 +10,7 @@
  * Interface InlineTestInterface
  * To be implemented when needing to test using output
  */
-interface InlineTestInterface {
+interface OutputTestInterface {
 
 	/*
 	 * Used to test the echo function is outputting correctly
